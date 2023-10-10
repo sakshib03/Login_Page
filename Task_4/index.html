@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Registration System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="login.jpeg" alt="Description of the image">
+
+        <form id="register-form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Username" id="new-username" required>
+            <input type="password" placeholder="Password" id="new-password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="secured-content" class="hidden">
+        <h2>Welcome to Our WebPage!</h2>
+        <p>This is protected content only accessible to logged-in users.</p>
+        <button id="logout">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
